@@ -1,0 +1,12 @@
+[
+  { "id": 1, "name": "name1", "price": 30, "img": "image/ktn.png" },
+  { "id": 2, "name": "name2", "price": 50, "img": "image/ktn.png" },
+  { "id": 3, "name": "name3", "price": 50, "img": "image/ktn.png" },
+  { "id": 4, "name": "name4", "price": 50, "img": "image/ktn.png" },
+  { "id": 5, "name": "name5", "price": 50, "img": "image/ktn.png" },
+  { "id": 6, "name": "name6", "price": 50, "img": "image/ktn.png" },
+  { "id": 7, "name": "name7", "price": 50, "img": "image/ktn.png" },
+  { "id": 8, "name": "name8", "price": 50, "img": "image/ktn.png" },
+  { "id": 9, "name": "name9", "price": 50, "img": "image/ktn.png" },
+  { "id": 10, "name": "name10", "price": 50, "img": "image/ktn.png" }
+]

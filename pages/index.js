@@ -8,7 +8,6 @@ import Style from "../styles/cardHome.module.scss";
 
 export default function Home() {
   const [productData] = useState(CardData);
-  const getData = useSelector((state) => state.CartReducer.cart);
   return (
     <div className={styles.container}>
       <Head>

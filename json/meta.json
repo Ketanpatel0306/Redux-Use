@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "Name",
+    "path": "/",
+    "description": "description",
+    "keywords": "keywords",
+    "content": "Home",
+    "SingleUpdate": "Home-update",
+    "viewport": "viewport",
+    "widthDeviceWidth": "width=device-width, initial-scale=1.0"
+  },
+  {
+    "id": 2,
+    "title": "Single-card",
+    "path": "/single-card",
+    "description": "description",
+    "keywords": "keywords",
+    "content": "single-card",
+    "SingleUpdate": "Single-update",
+    "viewport": "viewport",
+    "widthDeviceWidth": "width=device-width, initial-scale=1.0"
+  },
+  {
+    "id": 3,
+    "title": "New-data",
+    "path": "/new-data",
+    "description": "description",
+    "keywords": "keywords",
+    "content": "New-data",
+    "SingleUpdate": "New-update",
+    "viewport": "viewport",
+    "widthDeviceWidth": "width=device-width, initial-scale=1.0"
+  }
+]

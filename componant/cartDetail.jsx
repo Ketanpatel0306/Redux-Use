@@ -1,18 +1,28 @@
-import React, { useContext } from "react";
+import React from "react";
+import { useSelector } from "react-redux";
+import { CardHome } from "./cardHome";
+
 export const CartDetail = () => {
+  const getData = useSelector((state) => state.CartReducer.cart);
   return (
     <div>
-      hello CartDetail
-      {/* {cart.map((item, index) => {
+      {getData.map((item, index) => {
         return (
-          <CardHome
-            item={item}
-            cart={cart}
-            setCart={setCart}
-            key={index + "cartDetail"}
-          />
+          <div
+            key={index + "detailKey"}
+            style={{
+              height: "100vh",
+              width: "100%",
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <CardHome item={item} key={index + "cartDetail"} />;
+          </div>
         );
-      })} */}
+      })}
     </div>
   );
 };

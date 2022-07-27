@@ -18,13 +18,13 @@ export const CardHome = ({ item }) => {
         <img src={item.img} />
         <h5>Name: {item.name} </h5>
         <h6>Price: {item.price} </h6>
-        {getData.length ? (
-          <button onClick={() => removeToCardClick(item.id)}>
-            Remove Form Cart
-          </button>
-        ) : (
-          <button onClick={() => addToCardClick(item)}>Add to Cart</button>
-        )}
+        {/* {getData.length ? ( */}
+        <button onClick={() => removeToCardClick(item.id)}>
+          Remove Form Cart
+        </button>
+        {/* ) : ( */}
+        <button onClick={() => addToCardClick(item)}>Add to Cart</button>
+        {/* )} */}
       </div>
     </div>
   );

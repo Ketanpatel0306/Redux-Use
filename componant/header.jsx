@@ -19,7 +19,7 @@ export const Header = () => {
           }}
         >
           <a href="./single-card">
-            <h2>SingleCard : {getData.length} </h2>
+            <h2>SingleCard : {getData !== undefined ? getData.length : ""} </h2>
           </a>
           <a href="./new-data" style={{ marginLeft: "10px" }}>
             <h2>NewData</h2>

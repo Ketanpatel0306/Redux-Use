@@ -1,4 +1,4 @@
-import { CartDetail, Header, MetaData } from "../componant";
+import { CartDetail, Header } from "../componant";
 const SingleCard = () => {
   return (
     <div>

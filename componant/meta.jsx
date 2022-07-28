@@ -6,11 +6,16 @@ export const MetaData = () => {
   const [save, setSave] = useState([]);
   let location = window.location.pathname;
   useEffect(() => {
-    metaData.map(() => {
-      let data = metaData.filter((i) => {
-        return i.path == location;
-      });
-      setSave(data);
+    metaData.map(async () => {
+      try {
+        let data = await metaData.filter((i) => {
+          return i.path == location;
+        });
+        setSave(data);
+      } catch (error) {
+        if (error.name === "AbortError") return;
+        console.log("Error ", error);
+      }
     });
   }, []);
   return (
@@ -19,9 +24,12 @@ export const MetaData = () => {
         return (
           <>
             <title>{item.title}</title>
-            <meta name={item.description} content={item.content} />
-            <meta name={item.keywords} content={item.SingleUpdate} />
-            <meta name={item.viewport} content={item.widthDeviceWidth} />
+            <meta name="description" content={item.content} />
+            <meta name="keywords" content={item.SingleUpdate} />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1.0"
+            />
           </>
         );
       })}

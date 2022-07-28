@@ -32,3 +32,5 @@ yarn-error.log*
 .vercel
 package-lock.json
 yarn.lock
+/public/sitemap.xml
+/public/robots.txt

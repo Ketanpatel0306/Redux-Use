@@ -63,6 +63,9 @@ if (!dev && cluster.isMaster) {
     server.get("/new-data", (req, res) => {
       return nextApp.render(req, res, "/new-data");
     });
+    server.get("/dynamic", (req, res) => {
+      return nextApp.render(req, res, "/dynamic");
+    });
 
     // Default catch-all renders Next app
     server.get("*", (req, res) => {

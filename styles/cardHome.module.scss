@@ -1,4 +1,4 @@
-@import './sass/totalFile.scss';
+@import "./sass/totalFile.scss";
 
 .homeCardDiv {
   display: flex;
@@ -7,11 +7,9 @@
   align-items: center;
   margin-top: 30px;
   justify-content: space-between;
-  .innerDiv{
+  .innerDiv {
     @include forDivCenter;
     margin: 0% 20px;
     margin-top: 20px;
   }
-h5{
-}
 }

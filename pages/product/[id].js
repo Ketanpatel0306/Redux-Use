@@ -1,8 +1,11 @@
 import React from "react";
 import Head from "next/head";
 import { Header } from "../../componant";
+import { useRouter } from "next/router";
 
 const Details = ({ products }) => {
+  const routes = useRouter();
+  // console.log("routes", routes.query.id);
   return (
     <div>
       <Head>
@@ -11,7 +14,7 @@ const Details = ({ products }) => {
         <meta name="category" content={`${products.category}`} />
         <link rel="icon" href={`${products.image}`} />
       </Head>
-      <Header />
+      {/* <Header /> */}
       <div
         className="card h-100 text-center p-4"
         key={products.id}

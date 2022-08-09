@@ -1,10 +1,13 @@
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 import metaData from "../json/meta.json";
 
 export const MetaData = () => {
   const [save, setSave] = useState([]);
   let location = window.location.pathname;
+  const GetData = useSelector((state) => state.CartReducer.cart);
+
   useEffect(() => {
     metaData.map(async () => {
       try {
@@ -13,8 +16,9 @@ export const MetaData = () => {
         });
         setSave(data);
       } catch (error) {
-        if (error.name === "AbortError") return;
-        console.log("Error ", error);
+        if (error.name === "AbortError") {
+          return console.log("Error ", error);
+        }
       }
     });
   }, []);
